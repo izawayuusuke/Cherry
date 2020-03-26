@@ -1,6 +1,13 @@
-puts %q!Hello World!
+a = 'Ruby'
+a.prepend(<<TEXT)
+Java
+PHP
+TEXT
+puts a
 
-something = "Hello!"
-puts %Q?He said, #{something}, Hello World?
+b = <<TEXT.upcase
+Hello,
+goobye,
+TEXT
 
-puts %{He said, #{something}, goodbye\!}
+puts b
